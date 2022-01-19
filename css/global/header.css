@@ -1,0 +1,99 @@
+/*-----HEADER-----*/
+
+.header-bg {
+  background-color: var(--cor-12);
+}
+
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heaeder-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.header-links a {
+  display: inline-block;
+  padding: 16px 0;
+  font-size: 1.125rem;
+  position: relative;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.header-links a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: var(--cor-0);
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-links a:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .heaeder-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .header-links a {
+    background-color: var(--cor-11);
+    padding: 12px 16px;
+    border-bottom: 4px;
+  }
+
+  .header-links a:hover {
+    background-color: var(--cor-10);
+  }
+
+  .header-links a:after {
+    content: "";
+    display: none;
+    height: 2px;
+    width: 0%;
+    background-color: var(--cor-0);
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+  }
+}
+
+@media (max-width: 600px) {
+  .heaeder-menu {
+    gap: 12px;
+  }
+  .header-links a {
+    padding: 8px 12px;
+    font-size: 1.14rem;
+  }
+
+  .header-links a:after {
+    content: "";
+    display: none;
+    height: 2px;
+    width: 0%;
+    background-color: var(--cor-0);
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+  }
+}
+
+/*----END HEADER----*/
