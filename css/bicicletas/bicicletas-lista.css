@@ -1,0 +1,61 @@
+.bike-list {
+  padding: 60px 0 120px 0;
+}
+
+.title-bike-list {
+  margin-bottom: 40px;
+}
+
+.bike-list-container {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.bike-list-item {
+  min-width: 280px;
+}
+
+.bike-list-container a {
+  display: block;
+}
+
+.bike-list-img {
+  margin-bottom: 16px;
+}
+
+.bike-list-name {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.bike-list-name::before {
+  content: "";
+  height: 6px;
+  width: 11px;
+  display: inline-block;
+  background-color: var(--cor-p1);
+  margin-right: 8px;
+  transition: width 0.3s;
+}
+
+.bike-list-item a:hover .bike-list-name::before {
+  width: 24px;
+}
+
+.bike-list-price {
+  padding-left: 20px;
+}
+
+@media (max-width: 1200px) {
+  .bike-list {
+    padding-bottom: 60px;
+  }
+  .bike-list-container {
+    gap: 20px;
+  }
+}

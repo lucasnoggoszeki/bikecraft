@@ -14,14 +14,21 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
 img {
   max-width: 100%;
   display: block;
 }
 
-h1,
-ul,
-p {
-  margin: 0;
+img[src*=".jpg"] {
+  border-radius: 4px;
 }
