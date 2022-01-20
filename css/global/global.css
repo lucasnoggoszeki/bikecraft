@@ -167,7 +167,7 @@
 
 /*--BOTÃO--*/
 
-.main-info-bnt {
+.info-bnt {
   display: inline-block;
   padding: 16px 32px;
   background: linear-gradient(#ffb60d, #f2a50c);
@@ -177,7 +177,7 @@
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
 }
 
-.main-info-bnt:hover {
+.info-bnt:hover {
   background: linear-gradient(#ffb60d, #e59317);
 }
 
