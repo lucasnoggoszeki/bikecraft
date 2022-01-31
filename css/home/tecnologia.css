@@ -1,0 +1,82 @@
+#tecnologia-bg {
+  background-color: var(--cor-11);
+  box-shadow: inset 0 80px var(--cor-0), inset 0 -80px var(--cor-0);
+}
+
+#tecnologia-bg .tecnologia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+#tecnologia-bg .container-rigth img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+#tecnologia-bg .container-left {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+#tecnologia-bg .tecnologia-info {
+  margin-bottom: 80px;
+}
+
+#tecnologia-bg .tecnologia-info-vantagens {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#tecnologia-bg .tecnologia-info-title {
+  margin-bottom: 32px;
+}
+
+#tecnologia-bg .tecnologia-info-txt {
+  margin-bottom: 20px;
+}
+
+#tecnologia-bg .tecnologia-vantagens {
+  display: flex;
+  gap: 40px;
+}
+
+#tecnologia-bg .tecnologia-vantagens-boxes img {
+  margin-bottom: 8px;
+}
+
+#tecnologia-bg .tecnologia-vantagens-title {
+  margin-bottom: 8px;
+  width: max-content;
+}
+
+@media (max-width: 800px) {
+  #tecnologia-bg {
+    box-shadow: initial;
+  }
+
+  #tecnologia-bg .tecnologia {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  #tecnologia-bg .container-left {
+    padding: 60px 0;
+  }
+
+  #tecnologia-bg .tecnologia-info {
+    margin-bottom: 60px;
+  }
+
+  #tecnologia-bg .container-rigth img {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .tecnologia-vantagens {
+    flex-direction: column;
+  }
+}

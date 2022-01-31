@@ -1,0 +1,69 @@
+#seguros-bg {
+  background-color: var(--cor-11);
+}
+
+#seguros-bg .seguros {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+#seguros-bg .seguros-title {
+  grid-column: 1/-1;
+  margin-bottom: 60px;
+}
+
+#seguros-bg .tipos-seguros {
+  background-color: var(--cor-12);
+  padding: 32px 32px 32px 60px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+#seguros-bg .tipos-seguros h3 {
+  margin-bottom: 40px;
+}
+
+#seguros-bg .tipos-seguros span {
+  grid-column: 2;
+  display: block;
+  text-align: right;
+}
+
+#seguros-bg .seguro-item {
+  grid-column: 1/-1;
+  margin-bottom: 32px;
+}
+
+#seguros-bg .seguro-item-lista {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#seguros-bg .seguro-item-lista + .seguro-item-lista {
+  margin-top: 20px;
+}
+
+#seguros-bg .seguro-item-lista::before {
+  content: " ";
+  display: block;
+  width: 13px;
+  height: 9px;
+  background-image: url("../../asseets/icones/lista.svg");
+  position: absolute;
+  left: -21px;
+}
+
+#seguros-bg .tipos-seguros a {
+  grid-column: 1/-1;
+}
+
+@media (max-width: 800px) {
+  #seguros-bg .seguros {
+    grid-template-columns: 1fr;
+  }
+}
