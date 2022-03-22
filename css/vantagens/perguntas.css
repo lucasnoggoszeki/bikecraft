@@ -1,0 +1,43 @@
+#perguntas-bg {
+  padding: 60px 0 120px 0;
+  background-color: var(--cor-0);
+}
+
+#perguntas-bg .vantagens {
+  padding: 0 20px;
+}
+
+#perguntas-bg .container-top {
+  margin-bottom: 60px;
+}
+
+#perguntas-bg .container-bottom {
+  padding: 0 20px;
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+#perguntas-bg .paceiros-img {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+
+@media (max-width: 800px) {
+  #perguntas-bg {
+    padding-bottom: 60px;
+  }
+
+  #perguntas-bg .paceiros-img {
+    padding: 20px;
+  }
+
+  #perguntas-bg .container-top {
+    margin-bottom: 20px;
+  }
+
+  #perguntas-bg .container-bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

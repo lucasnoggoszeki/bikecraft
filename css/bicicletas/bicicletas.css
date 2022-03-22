@@ -1,0 +1,108 @@
+.bicicletas-bg {
+  background-image: linear-gradient(
+    to right,
+    var(--cor-0) 30%,
+    var(--cor-11) 0%
+  );
+}
+
+#bicicletas .bicicletas-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#bicicletas .bicicleta-container-img {
+  display: grid;
+}
+
+#bicicletas .bicicleta-container-img img {
+  grid-area: 1/1;
+}
+
+#bicicletas .bicicleta-container-img span {
+  grid-area: 1/1;
+  place-self: start end;
+  margin-top: 20px;
+  background-color: var(--cor-12);
+  padding: 8px 16px 8px 16px;
+  display: inline-block;
+  border-radius: 5px 0 0 5px;
+}
+
+#bicicletas .bicicleta-container-txt {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: start;
+}
+
+#bicicletas .bicicleta-container-txt h2,
+#bicicletas .bicicleta-container-txt p {
+  grid-column: 1/-1;
+}
+
+#bicicletas .bicicleta-container-txt h2 {
+  margin-bottom: 20px;
+}
+
+#bicicletas .bicicleta-container-txt h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  margin-bottom: 8px;
+}
+
+#bicicletas .bicicleta-container-txt p {
+  margin-bottom: 32px;
+}
+
+#bicicletas .bicicleta-container-txt a {
+  place-self: end;
+}
+
+#bicicletas .bicicleta-container-txt li {
+  display: flex;
+  align-items: center;
+}
+
+#bicicletas .bicicleta-container-txt li + li {
+  margin-top: 16px;
+}
+
+#bicicletas .bicicleta-container-info img {
+  width: 24px;
+  margin-right: 8px;
+}
+
+@media (max-width: 800px) {
+  .bicicletas-bg {
+    background: var(--cor-11);
+  }
+
+  #bicicletas .bicicletas-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  #bicicletas .bicicleta-container-txt {
+    grid-template-columns: 1fr;
+  }
+
+  #bicicletas .bicicleta-container-info {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 32px;
+    font-size: 1rem;
+  }
+
+  #bicicletas .bicicleta-container-txt a {
+    place-self: start;
+  }
+}
