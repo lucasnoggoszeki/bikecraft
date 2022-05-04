@@ -176,6 +176,8 @@
   color: #332200;
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
   max-width: max-content;
+  border: none;
+  cursor: pointer;
 }
 
 .info-bnt:hover {
@@ -255,6 +257,10 @@
   max-width: 1200px;
   padding: 60px 20px 0;
   margin: 0 auto;
+}
+
+.titulo {
+  background: url(../../asseets/dec/top-right.svg) no-repeat top right 20px;
 }
 
 @media (max-width: 800px) {
