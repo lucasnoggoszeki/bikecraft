@@ -8,13 +8,15 @@
   <title>Bikecreaft - Biciletas Eletricas</title>
   <meta name="description"
     content="Bicicletas elétricas de alta precisão e qualidade,  feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft." />
-  <link rel="preload" href="css/style.css" as="style" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet" />
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
@@ -29,7 +31,7 @@
             <a href="bicicletas.html">Biciletas</a>
           </li>
           <li class="header-links"><a href="seguros.html">Seguros</a></li>
-          <li class="header-links"><a href="./contato.html">Contato</a></li>
+          <li class="header-links"><a href="contato.html">Contato</a></li>
         </ul>
       </nav>
     </div>
@@ -38,16 +40,16 @@
   <main class="intro-bg">
     <div class="intro container">
       <div class="main-info">
-        <p class="main-info-title font-1-xxl cor-0">
+        <p class="main-info-title font-1-xxl cor-0 fadeInDown" data-anime="200">
           Bicicletas feitas sob medida<span class="cor-p1">.</span>
         </p>
-        <p class="main-info-txt font-2-l cor-5">
+        <p class="main-info-txt font-2-l cor-5 fadeInDown" data-anime="400">
           Bicicletas elétricas de alta precisão e qualidade, feitas sob medida
           para você. Explore o mundo na sua velocidade com a Bikcraft.
         </p>
-        <a href="bicicletas.html" class="info-bnt">ESCOLHA A SUA</a>
+        <a href="bicicletas.html" class="info-bnt fadeInDown" data-anime="600">ESCOLHA A SUA</a>
       </div>
-      <picture class="main-pic">
+      <picture class="main-pic fadeInDown" data-anime="800">
         <source media="(max-width:800px)" srcset="asseets/bicicletas/nimbus.jpg">
         <img src="./asseets/fotos/introducao.jpg" alt="Bicicleta preta com motor elétrico" />
       </picture>
@@ -239,7 +241,9 @@
         <nav class="font-1-m cor-5 txt">
           <ul>
             <li><a href="bicicletas.html">Bicicletas</a></li>
-            <li><a href="seguros.html">Seguros</a></li>
+            <li <ul>
+            <li><a href="./bicicletas.html">Bicicletas</a></li>
+            <li><a href="./seguros.html">Seguros</a></li>><a href="seguros.html">Seguros</a></li>
             <li><a href="contato.html">Contato</a></li>
             <li><a href="termos.html">Termos e Condições</a></li>
           </ul>
@@ -248,6 +252,8 @@
       <p class="font-2-m cor-6 footer-copy">Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
+  <script src="js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

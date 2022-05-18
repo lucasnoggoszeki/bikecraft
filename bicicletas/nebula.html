@@ -8,12 +8,14 @@
   <title>Nebula</title>
   <meta name="description"
     content="Bicicletas elétricas de alta precisão e qualidade,  feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet" />
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
@@ -25,10 +27,10 @@
       <nav aria-label="primaria" class="nav-bar">
         <ul class="heaeder-menu cor-0 font-1-m">
           <li class="header-links">
-            <a href="../bicicletras.htmml">Biciletas</a>
+            <a href="../bicicletas.html">Biciletas</a>
           </li>
           <li class="header-links"><a href="../seguros.html">Seguros</a></li>
-          <li class="header-links"><a href="../contato.htmml">Contato</a></li>
+          <li class="header-links"><a href="../contato.html">Contato</a></li>
         </ul>
       </nav>
     </div>
@@ -43,15 +45,15 @@
     </div>
     <div id="bicicleta" class="container">
       <div class="bicicleta-imgs">
-        <img src="../asseets/bicicleta/nimbus3.jpg" alt="Nebula">
         <img src="../asseets/bicicleta/nimbus1.jpg" alt="Ninbus">
         <img src="../asseets/bicicleta/nimbus2.jpg" alt="Magic">
+        <img src="../asseets/bicicleta/nimbus3.jpg" alt="Nebula">
       </div>
       <div class="bicileta-conteudo">
         <p class="font-2-l cor-5">A Nebula Cosmic é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com
           os melhores acessórios, o que garante maior velocidade.</p>
         <div class="bicicleta-comprar">
-          <a class="info-bnt" href="../orcamento.html">Comprar Agora</a>
+          <a class="info-bnt" href="../orcamento.html?tipo=bikcraft&produto=nebula">Comprar Agora</a>
           <span class="font-1-xs cor-6"><img src="../asseets/icones/entrega.svg">entrega em 5 dias</span>
           <span class="font-1-xs cor-6"><img src="../asseets/icones/estoque.svg">18 em estoque</span>
         </div>
@@ -97,16 +99,16 @@
     </h2>
     <ul class="bike-list-container">
       <li class="bike-list-item">
-        <a href="">
+        <a href="magic.html">
           <img src="../asseets/bicicletas/magic.jpg" alt="Magic Migth" class="bike-list-img" />
           <h3 class="bike-list-name font-1-xl">Magic Might</h3>
           <span class="bike-list-price font-2-m cor-8">R$ 2499</span>
         </a>
       </li>
       <li class="bike-list-item">
-        <a href="">
+        <a href="ninbus.html">
           <img src="../asseets/bicicletas/nimbus.jpg" alt="Ninbus Stark" class="bike-list-img" />
-          <h3 class="bike-list-name font-1-xl">Nebula Cosmic</h3>
+          <h3 class="bike-list-name font-1-xl">Ninbus Stark</h3>
           <span class="bike-list-price font-2-m cor-8">R$ 3999</span>
         </a>
       </li>
@@ -158,6 +160,7 @@
       </p>
     </div>
   </footer>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>
